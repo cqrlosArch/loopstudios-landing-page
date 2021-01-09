@@ -137,5 +137,5 @@ gulp.task('default', () =>{
     //gulp.watch('./src/js/*.js', gulp.series('babel')).on('change',reload)
 })
 
-export const build_html = gulp.series(gulp.series('styles','babel','html-min'), 'clean-css','imgMin');
-export const build_pug = gulp.series(gulp.series('views','sass','babel'), 'clean-css','imgMin');
+export const build_html = gulp.series(gulp.series('styles','babel','html-min'), 'clean-css');
+export const build_pug = gulp.series(gulp.series('views','sass','babel'), 'clean-css');
