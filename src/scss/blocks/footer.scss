@@ -1,0 +1,71 @@
+.footer {
+  background-color: $black;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include md {
+    margin-top: 7rem;
+    padding: 3rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'title social'
+      'list text';
+  }
+  &__title {
+    font-size: 2rem;
+    font-family: $alata;
+    @include md {
+      grid-area: title;
+    }
+  }
+  &-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    @include md {
+      grid-area: list;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 60%;
+    }
+    &__item {
+      margin-bottom: 1.3rem;
+      @include md {
+        margin: 0;
+      }
+    }
+    &__link {
+      text-decoration: none;
+      color: $white;
+      font-weight: bold;
+      font-size: 1.3rem;
+      @include md {
+        font-size: 1rem;
+      }
+    }
+  }
+  .social {
+    display: flex;
+    min-width: 150px;
+    align-items: center;
+    justify-content: space-between;
+    @include md {
+      margin-left: auto;
+      max-width: 400px;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    margin-top: 2rem;
+    color: $veryDarkGray;
+    font-family: $alata;
+    @include md {
+      text-align: right;
+      margin: 0;
+    }
+  }
+}

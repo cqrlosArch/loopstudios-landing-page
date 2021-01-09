@@ -1,0 +1,17 @@
+html {
+  font-size: 15px;
+  box-sizing: border-box;
+  font-family: $josefinSans;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+}

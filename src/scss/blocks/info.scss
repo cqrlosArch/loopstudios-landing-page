@@ -1,0 +1,45 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  @include md {
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+  &__img {
+    max-width: 100%;
+    width: 100%;
+  }
+  .info-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include md {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 3rem;
+      padding-bottom: 0;
+      background-color: $white;
+      width: 500px;
+      height: 300px;
+      right: 0;
+      bottom: 0;
+    }
+    &__title {
+      width: 250px;
+      text-transform: uppercase;
+      font-size: 2rem;
+    }
+    &__text {
+      font-weight: bold;
+      color: $darkGray;
+      line-height: 1.5rem;
+      font-size: 1.1rem;
+    }
+  }
+}

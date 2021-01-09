@@ -1,0 +1,6 @@
+.main {
+  margin: 3rem 1rem;
+  @include md {
+    margin: 3rem 5rem;
+  }
+}

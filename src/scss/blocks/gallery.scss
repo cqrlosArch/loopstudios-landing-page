@@ -1,0 +1,72 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  width: 100%;
+
+  @include md {
+    display: block;
+    margin-top: 10rem;
+    position: relative;
+    margin-bottom: 5rem;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__container {
+    width: 100%;
+    @include md {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      width: inherit;
+      margin-bottom: 2rem;
+      position: relative;
+      @include md {
+        margin-bottom: 0;
+      }
+      &__img {
+        max-width: 100%;
+        width: 100%;
+      }
+      &__name::after {
+        content: attr(data-title);
+        position: absolute;
+        width: 120px;
+        top: 50%;
+        left: 10px;
+        color: $white;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        @include md {
+          top: 80%;
+          width: 160px;
+          font-size: 2rem;
+          left: 20px;
+        }
+      }
+    }
+  }
+  &__button {
+    outline: none;
+    border: 1px solid $black;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: inherit;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    @include md {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
