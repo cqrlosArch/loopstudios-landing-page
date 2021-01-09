@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://windbnb-app.cqrlosarch.vercel.app/" target="_blank">
+    <a href="https://loopstudios-landing-page.cqrlosarch.vercel.app/" target="_blank">
       Demo
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/solutions/ZdoNDa90lED3Pa6S9EkP" target="_blank">
+    <a href="https://www.frontendmentor.io/solutions/responsive-landing-page-using-sass-and-pug-xaV8kev3M" target="_blank">
       Solution
     </a>
     <span> | </span>
@@ -45,8 +45,8 @@
 
 ### Built With
 
-- [Sass](https://reactjs.org/)
-- [Pug](https://styled-components.com/)
+- [Sass](https://sass-lang.com/)
+- [Pug](https://pugjs.org/api/getting-started.html)
 
 ## Features
 
