@@ -8,10 +8,23 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
-  box-sizing: border-box;
 }
 
 body {
   width: 100%;
   height: auto;
+}
+
+a {
+  position: relative;
+}
+a:hover::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 30px;
+  background-color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -40%;
 }

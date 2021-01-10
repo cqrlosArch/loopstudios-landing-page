@@ -63,6 +63,10 @@
     background-color: inherit;
     letter-spacing: 0.2rem;
     cursor: pointer;
+    &:hover{
+      color: $white;
+      background-color: $black;
+    }
     @include md {
       position: absolute;
       top: 0;
