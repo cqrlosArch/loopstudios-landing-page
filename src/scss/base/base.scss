@@ -17,14 +17,17 @@ body {
 
 a {
   position: relative;
-}
-a:hover::after {
-  position: absolute;
-  content: '';
-  height: 2px;
-  width: 30px;
-  background-color: #fff;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -40%;
+
+  @include md {
+    &:hover::after {
+      position: absolute;
+      content: '';
+      height: 2px;
+      width: 30px;
+      background-color: #fff;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -40%;
+    }
+  }
 }
